@@ -350,14 +350,41 @@ footer {
   .body table {
     width: calc(100% - 45px);
     min-width: 1050px;
-    margin-top: 50px; }
-    .body table .t_title th {
-      font-weight: 900;
-      font-size: 16px;
-      color: #222222;
-      text-align: left;
-      padding-left: 10px;
-      padding-bottom: 15px; }
+    margin-top: 50px;
+    table-layout: fixed; }
+    .body table .t_title {
+      width: 100%;
+      background-color: #F4F4F4; }
+      .body table .t_title th {
+        font-weight: 900;
+        font-size: 16px;
+        color: #222222;
+        background-color: #F4F4F4;
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px; }
+        .body table .t_title th:before {
+          content: '';
+          width: 5px;
+          height: 46px;
+          background-color: #F4F4F4;
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: -3px; }
+        .body table .t_title th:after {
+          content: '';
+          width: 5px;
+          height: 46px;
+          background-color: #F4F4F4;
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: -3px; }
     .body table .t_clear {
       width: 100%;
       height: 15px;
